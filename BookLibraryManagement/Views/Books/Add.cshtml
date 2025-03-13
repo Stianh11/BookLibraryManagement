@@ -1,0 +1,44 @@
+﻿@model BookLibraryManagement.Models.Book
+
+<h2 class="text-center">➕ Add a New Book</h2>
+
+<div class="card p-4 shadow-sm">
+    <form method="post" enctype="multipart/form-data">
+        <div class="mb-3">
+            <label class="form-label">Title</label>
+            <input type="text" class="form-control" asp-for="BookTitle" required />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Genre</label>
+            <input type="text" class="form-control" asp-for="Genre" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Author</label>
+            <input type="text" class="form-control" asp-for="Author" required />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Access Type</label>
+            <select class="form-select" asp-for="AccessType">
+                <option>Preview</option>
+                <option>Download</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Cover Image (URL)</label>
+            <input type="text" class="form-control" asp-for="CoverImage" placeholder="Enter image URL" />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">PDF (URL)</label>
+            <input type="text" class="form-control" asp-for="PdfUrl" placeholder="Enter PDF URL" />
+        </div>
+
+        <button type="submit" class="btn btn-success w-100">💾 Save</button>
+    </form>
+
+    <a class="btn btn-secondary mt-3 w-100" asp-controller="Books" asp-action="Index">🔙 Back to list</a>
+</div>

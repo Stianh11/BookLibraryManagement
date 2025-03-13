@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Welcome to Book Library Management System";
+}
+
+<div class="container text-center mt-5">
+    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d" alt="Site Logo" class="mb-4" width="150">
+    <h1 class="fw-bold text-danger">📚 Welcome to the Learning Hub!</h1>
+    <p class="lead">
+        This is a learning-based book management system where we apply skills in **ASP.NET Core MVC**, **Entity Framework Core**, and **SQLite**.
+    </p>
+
+    <div class="card shadow p-4 mt-4 bg-dark text-white">
+        <h2>🔍 What Have We Learned?</h2>
+        <ul class="text-start">
+            <li>✅ Setting up an **ASP.NET Core MVC** project</li>
+            <li>✅ Using **Entity Framework Core** with SQLite</li>
+            <li>✅ Implementing **CRUD (Create, Read, Update, Delete)** for books</li>
+            <li>✅ Using **Bootstrap 5** for styling</li>
+            <li>✅ Uploading and managing **book covers and PDFs**</li>
+            <li>✅ Implementing **edit and delete confirmations**</li>
+        </ul>
+    </div>
+
+    <div class="mt-4">
+        <h3 class="text-primary">📖 Our Book Source</h3>
+        <p>We use <a href="https://www.gutenberg.org/" target="_blank">Project Gutenberg</a> as a free source for books.</p>
+    </div>
+
+    <div class="mt-4">
+        <a class="btn btn-primary btn-lg" asp-controller="Books" asp-action="Index">📚 Browse Books</a>
+    </div>
+</div>
